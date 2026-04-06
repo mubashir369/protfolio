@@ -104,10 +104,22 @@ export default function Home() {
         
         <div className="container relative z-10 mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <AnimatedSection delay={0.2}>
-            <h1 className="text-5xl md:text-7xl font-bold font-outfit mb-6 tracking-tight">
-              Hi, I'm <br className="hidden md:block" />
-              <AnimatedText text="Muhammed Mubashir" delay={0.2} className="mt-2" />
-            </h1>
+         <h1 className="text-5xl md:text-7xl font-bold font-outfit mb-6 tracking-tight">
+  Hi, I'm <br className="hidden md:block" />
+<div className="flex flex-wrap gap-x-4 mt-2">
+  <AnimatedText 
+    text="Muhammed" 
+    delay={0.2} 
+   className="bg-gradient-to-r from-slate-100 to-slate-500 bg-clip-text bg-[length:200%_auto] animate-text-gradient" 
+  />
+  <AnimatedText 
+    text="Mubashir" 
+    delay={0.4} 
+     className="bg-gradient-to-r from-amber-200 via-yellow-400 to-amber-500 bg-clip-text bg-[length:200%_auto] animate-text-gradient" 
+    
+  />
+</div>
+</h1>
             <h2 className="text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-300 mb-8">
               Full Stack Developer
             </h2>
